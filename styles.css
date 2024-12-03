@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +10,9 @@
 
 body {
     display: flex;
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgb(255, 255, 255);
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
     margin: 0 5%;
     gap: 5%;
 
@@ -18,12 +22,12 @@ body {
         top: 0;
         width: 25%;
         height: 100vh;
-        padding: 2% 3%;
+        padding: 2.5%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: rgb(14, 4, 75);
-    /* animation: slide-in 3s forwards; */
+        background-color: rgb(0, 0, 0);
+        /* animation: slide-in 3s forwards; */
 
 
 
@@ -32,11 +36,18 @@ body {
             display: flex;
             flex-direction: column;
             gap: 3px;
-            font-family: cursive;
+            font-family: "Poppins", sans-serif;
+
+
+            gap: 5px;
 
 
             span {
-                color: rgb(130, 141, 236);
+                color: #4ed63c;
+            }
+
+            span::after {
+                content: "|";
             }
         }
 
@@ -49,47 +60,34 @@ body {
                 color: rgb(255, 255, 255);
                 text-decoration: none;
                 font-size: 35px;
-            }
 
-            #linkedin:hover {
-                color: #0077B5;
-            }
-
-            #instagram:hover {
-                color: #FF69B4;
-            }
-
-            #github:hover {
-                color: #6e5494;
-            }
-
-            #youtube:hover {
-                color: #FF0000;
+                &:hover {
+                    color: #4ed63c;
+                }
             }
         }
 
         .lower {
             display: flex;
             justify-content: space-between;
-            font-size: 16px;
-            font-weight: 500;
+            font-size: smaller;
             color: grey;
 
             div {
                 width: 1px;
-                height: 100%;
+                height: 100% !important;
                 background-color: rgba(255, 255, 255, 0.541);
             }
 
             a {
                 color: grey;
                 text-decoration: none;
-           
+
             }
 
             a:hover {
                 cursor: pointer;
-                color: white;
+                color: #4ed63c;
             }
         }
 
@@ -98,11 +96,11 @@ body {
     .content {
         width: 100%;
         margin: 5% 0;
-        color: black;
-        background-color: white;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.952);
 
         .title {
-            font-family: cursive;
+            font-family: "Oswald", sans-serif;
             padding-bottom: 1%;
         }
 
@@ -114,8 +112,8 @@ body {
             position: relative;
             bottom: 0;
             left: 0;
-            background-color: rgb(14, 4, 75);
-            ;
+            background-color: #4ed63c;
+
         }
 
         .aboutme {
@@ -140,13 +138,13 @@ body {
                 h3 {
                     width: 50%;
                     padding-bottom: 2%;
-                    color: rgb(23, 5, 146);
-                    ;
-                    font-family: cursive;
+                    color: #4ed63c;
+
+                    font-family: "Oswald", sans-serif;
                     font-weight: 400;
 
                     span {
-                        color: black;
+                        color: rgb(255, 255, 255);
                         font-family: system-ui;
                     }
 
@@ -174,6 +172,7 @@ body {
                     flex-direction: column;
                     width: 50%;
                     padding: 2%;
+                    gap: 5px;
 
                     .skill {
                         display: flex;
@@ -182,7 +181,7 @@ body {
                     }
 
                     .progress {
-                        background-color: rgba(0, 0, 255, 0.295);
+                        background-color: #a2eb9877;
                         height: 4px;
                         width: 100%;
 
@@ -191,37 +190,37 @@ body {
                         #html {
                             height: 4px;
                             width: 95%;
-                            background-color: blue;
+                            background-color: #4ed63c;
                         }
 
                         #css {
                             height: 4px;
                             width: 90%;
-                            background-color: blue;
+                            background-color: #4ed63c;
                         }
 
                         #js {
                             height: 4px;
                             width: 90%;
-                            background-color: blue;
+                            background-color: #4ed63c;
                         }
 
                         #tail {
                             height: 4px;
                             width: 95%;
-                            background-color: blue;
+                            background-color: #4ed63c;
                         }
 
                         #react {
                             height: 4px;
                             width: 90%;
-                            background-color: blue;
+                            background-color: #4ed63c;
                         }
 
                         #python {
                             height: 4px;
                             width: 85%;
-                            background-color: blue;
+                            background-color: #4ed63c;
                         }
                     }
                 }
@@ -243,11 +242,12 @@ body {
                 flex-wrap: wrap;
                 justify-content: space-between;
 
-                .project {   position: relative;
+                .project {
+                    position: relative;
                     width: 48%;
-                    height: 250px;
-                    margin-bottom: 10px;
-         
+                    height: 200px;
+                    margin-bottom: 30px;
+
 
                     img {
                         width: 100%;
@@ -276,12 +276,17 @@ body {
                         a {
                             text-decoration: none;
                             font-size: 28px;
-                            background-color: rgba(0, 0, 255, 0.514);
-                            border: 2px solid blue;
+                            background-color: #4ed63c;
+                            border: 2px solid #4ed63c;
                             color: white;
                             font-weight: bolder;
                             border-radius: 10px;
                             padding: 0 5px;
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: #1a910a;
+                            }
                         }
 
                         &:hover {
@@ -334,11 +339,17 @@ body {
             }
 
             button {
-                background-color: blue;
+                background-color: #4ed63c;
+                font-size: 17px;
                 color: white;
-                width: 140px;
+                width: 150px;
                 padding: 15px;
                 border: none;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #1a910a;
+                }
             }
         }
 
@@ -347,15 +358,12 @@ body {
             justify-content: center;
             width: 100%;
             padding: 3%;
-            background-color: rgb(14, 4, 75);
-            color: white;
+            background-color: #4ed63c;
+            color: #000000;
+            /* border-top: 2px solid grey; */
             font-family: system-ui;
+            gap: 10px;
 
-            span::before{
-                content: " ";
-                display: block;
-                width: 21px;
-            }
         }
     }
 }
@@ -364,46 +372,46 @@ html {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     body {
         display: block;
         margin: 0;
 
         .profile {
             width: 100%;
+            height: auto;
             position: relative;
             left: 0;
             float: left;
-            padding: 5%;
+            padding: 30px;
             font-size: 0.9rem;
+            gap: 30px;
 
             .upper {
                 width: 100%;
                 text-align: center;
 
-                h2 {
-                    text-align: justify;
-                    padding-left: 20px;
+                h2,
+                h1,
+                h3 {
+                    text-align: start;
                 }
 
                 img {
-                    margin: 0 auto;
-                    width: 90%;
+                    height: auto;
+                    width: 100%;
                 }
             }
 
             .middle {
-                padding: 20px;
-                justify-content: space-around;
-
-                a {
-                    font-size: 30px;
-                }
+                justify-content: space-between;
             }
 
             .lower {
-                padding: 0 20px;
-                margin-bottom: 10px;
+font-size: medium;
+                div {
+                    height: 18px !important;
+                }
             }
         }
 
@@ -426,7 +434,6 @@ html {
 
                     .skill-percentge {
                         width: 100%;
-
                     }
                 }
             }
@@ -472,6 +479,7 @@ html {
 
     }
 }
+
 /* 
 @keyframes slide-in {
     o%{
